@@ -19,13 +19,13 @@ Say you don't want your server to start listening for connections until a long-r
 
 const asyncReady = require('async-ready');
 
-// register this async dependency as not yet ready
+// register this async dependency as not yet ready (as soon as it's loaded into memory)
 asyncReady.registerDependency( new Promise( (resolve) => {
 
       // perform long-running operation
       thisTakesSomeTime()
 
-        // resolve the promise to alert anyone listening that dependencies are ready
+        // resolve the promise to alert anyone listening that this dependency is ready
         .then( () => resolve() );
 
     }));
