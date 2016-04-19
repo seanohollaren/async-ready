@@ -1,6 +1,6 @@
 # async-ready
 
-Async ready allows you to register async dependencies and be alerted when all of them are ready.
+async-ready allows you to register async dependencies and be alerted when all of them are ready.
 
 ## Installation
 
