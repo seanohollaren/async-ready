@@ -1,11 +1,27 @@
 {
   "name": "async-ready",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A module to keep track of asynchronous dependencies and communicate their status with the rest of the application.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seanohollaren/async-ready.git"
+  },
+  "author": "Sean O'Hollaren <sean.ohollaren@gmail.com>",
+  "contributors": [{
+    "name": "Alexander Wolden",
+    "email": "awolden@gmail.com"
+  }],
+  "keywords": [
+    "dependency",
+    "dependencies",
+    "manager",
+    "ready",
+    "async",
+    "asynchronous"
+  ],
   "license": "ISC"
 }
