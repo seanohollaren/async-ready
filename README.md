@@ -13,7 +13,7 @@ Pass the module a promise which will be resolved once your dependency is ready.
 
 Say you don't want your server to start listening for connections until a long-running call has completed as part of start-up.
 
-##### someFile.js
+##### someDependency.js
 
 ```javascript
 
