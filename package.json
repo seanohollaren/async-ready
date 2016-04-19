@@ -1,0 +1,11 @@
+{
+  "name": "async-ready",
+  "version": "0.0.1",
+  "description": "A module to keep track of asynchronous dependencies and communicate their status with the rest of the application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
