@@ -1,6 +1,7 @@
 const asyncReady = require('../index');
 const assert = require('assert');
 
+// register a dependency which resolves after 1 second
 asyncReady.registerDependency(new Promise((resolve) => {
 
   wait(1)
@@ -8,6 +9,7 @@ asyncReady.registerDependency(new Promise((resolve) => {
 
 }));
 
+// register a dependncy which resolves after 3 seconds
 asyncReady.registerDependency(new Promise((resolve) => {
 
   wait(3)
@@ -15,15 +17,16 @@ asyncReady.registerDependency(new Promise((resolve) => {
 
 }));
 
+// assert that ready listener was called after dependencies resolved and there weren't any errors
 asyncReady.onDependenciesReady()
   .then(() => {
 
-    console.log('Resolving after dependencies were ready');
+    assert(true, 'Should resolve after dependencies are ready');
 
   })
   .catch((error) => {
 
-    console.dir(error);
+    assert(!error, 'Shouldn\'t be any uncaught errors')
 
   });
 
