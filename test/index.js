@@ -23,6 +23,7 @@ asyncReady.onDependenciesReady()
 
   });
 
+// wait the specified number of seconds before resolving
 function wait(seconds) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(true), seconds * 1000);
