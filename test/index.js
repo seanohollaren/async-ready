@@ -19,7 +19,11 @@ asyncReady.onDependenciesReady()
   .then(() => {
 
     console.log('Resolving after dependencies were ready');
-    assert(false, 'Resolved after all dependencies were ready');
+
+  })
+  .catch((error) => {
+
+    console.dir(error);
 
   });
 
