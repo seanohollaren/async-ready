@@ -1,7 +1,7 @@
 {
   "name": "async-ready",
   "version": "1.0.0",
-  "description": "A module to keep track of asynchronous dependencies and communicate their status with the rest of the application.",
+  "description": "A module to keep track of asynchronous dependencies and communicate their status with the rest of the application",
   "main": "index.js",
   "scripts": {
     "test": "node test/fail.integration.js && node test/pass.integration.js"
