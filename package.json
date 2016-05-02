@@ -1,6 +1,6 @@
 {
   "name": "async-ready",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A module to keep track of asynchronous dependencies and communicate their status with the rest of the application",
   "main": "index.js",
   "scripts": {

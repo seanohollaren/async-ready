@@ -1,3 +1,5 @@
+![buildstatus](https://travis-ci.org/seanohollaren/async-ready.svg?branch=master)
+
 # async-ready
 
 async-ready allows you to register async dependencies and be alerted when all of them are ready.
